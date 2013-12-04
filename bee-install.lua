@@ -10,7 +10,7 @@ local branch = "master"
 local files = {
   {
     name = "bee",
-    url = "https://raw.github.com/Forte40/bee/"..branch.."/bee.lua"
+    url = "https://raw.github.com/daribouca/bee/"..branch.."/bee.lua"
   }
 }
 
