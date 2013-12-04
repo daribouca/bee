@@ -840,6 +840,7 @@ while true do
     if isPurebred(princessData, droneData[2]) then
       logLine("Bees are purebred")
       turtle.turnRight()
+      redstone.setOutput("back", true)
       break
     end
     local unknownSpecies = getUnknown(princessData, droneData)
