@@ -640,6 +640,9 @@ function scoreBee(princessData, droneData)
   if not bees[droneSpecies[1]].targeted or not bees[droneSpecies[2]].targeted then
     return 0
   end
+  if droneData["effect"] == "forestry.effectMiasmic" then
+	return 0
+  end
   local princessSpecies = {princessData["speciesPrimary"], princessData["speciesSecondary"]}
   local max = math.max
   local score
