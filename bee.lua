@@ -836,7 +836,7 @@ logLine("Clearing system...")
 clearSystem()
 while true do
   redstone.setOutput("back", false)
-  redstone.setOutput("up", false)
+  redstone.setOutput("top", false)
   ditchProduct()
   countBees()
   scanBees()
@@ -846,7 +846,7 @@ while true do
       logLine("Bees are purebred")
       turtle.turnRight()
       redstone.setOutput("back", true)
-      redstone.setOutput("up", true)
+      redstone.setOutput("top", true)
       break
     end
     local unknownSpecies = getUnknown(princessData, droneData)
