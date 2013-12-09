@@ -842,11 +842,11 @@ end
 
 logLine("Clearing system...")
 clearSystem()
+getLeftOvers()
 while true do
   redstone.setOutput("back", false)
   redstone.setOutput("top", false)
   ditchProduct()
-  getLeftOvers()
   countBees()
   scanBees()
   princessData, droneData = analyzeBees()
