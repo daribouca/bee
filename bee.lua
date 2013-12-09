@@ -829,6 +829,13 @@ else
     beeData.targeted = true
   end
 end
+ 
+function getLeftOvers()  
+  print("getting leftovers...")
+  turtle.turnLeft()
+  turtle.suck()
+  turtle.turnRight()
+end
 
 -- breeding loop ---------------------------------------------------------------
 
@@ -837,6 +844,7 @@ clearSystem()
 while true do
   redstone.setOutput("back", false)
   redstone.setOutput("top", false)
+  getLeftOvers()
   ditchProduct()
   countBees()
   scanBees()
