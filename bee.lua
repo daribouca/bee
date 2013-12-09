@@ -833,6 +833,7 @@ end
 -- retrieves leftover bees in the analyzer
 function getLeftOvers()  
   print("getting leftovers...")
+  sleep(15)
   turtle.turnLeft()
   turtle.suck()
   turtle.turnRight()
