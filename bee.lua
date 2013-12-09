@@ -841,9 +841,10 @@ end
 
 -- breeding loop ---------------------------------------------------------------
 
+sleep(15)
 logLine("Clearing system...")
 clearSystem()
-getLeftOvers()
+--getLeftOvers()
 while true do
   redstone.setOutput("back", false)
   redstone.setOutput("top", false)
