@@ -830,6 +830,7 @@ else
   end
 end
  
+-- retrieves leftover bees in the analyzer
 function getLeftOvers()  
   print("getting leftovers...")
   turtle.turnLeft()
