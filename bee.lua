@@ -849,9 +849,8 @@ while true do
   redstone.setOutput("back", false)
   redstone.setOutput("top", false)tArgs = { ... }
   if #tArgs > 0 then
-    logLine("targeting bee species:")
 	for i, target in ipairs(tArgs) do
-      logLine(target)
+	  logLine("Targeted bee species: "..target)
 	end
   end
   ditchProduct()
