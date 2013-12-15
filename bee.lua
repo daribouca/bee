@@ -847,7 +847,10 @@ clearSystem()
 --getLeftOvers()
 while true do
   redstone.setOutput("back", false)
-  redstone.setOutput("top", false)
+  redstone.setOutput("top", false)tArgs = { ... }
+  if #tArgs > 0 then
+    logLine("targeting bee species: "..tArgs)
+  end
   ditchProduct()
   countBees()
   scanBees()
