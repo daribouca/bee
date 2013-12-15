@@ -479,7 +479,7 @@ function getBees()
   end
   log("*")
   while turtle.suck() do
-    log("*")
+    log("+")
   end
   logLine()
 end
